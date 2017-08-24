@@ -315,7 +315,6 @@ public abstract class Chart<T extends ChartData<? extends IDataSet<? extends Ent
         mData = null;
         mOffsetsCalculated = false;
         mIndicesToHighlight = null;
-        mChartTouchListener.setLastHighlighted(null);
         invalidate();
     }
 

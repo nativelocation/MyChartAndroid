@@ -82,6 +82,9 @@ public class PieChart extends PieRadarChartBase<PieData> {
      */
     private float mHoleRadiusPercent = 50f;
 
+    private float mMiddleOffsetPercent = 50f;
+    private float mMiddleRadiusPercent = 50f;
+
     /**
      * the radius of the transparent circle next to the chart-hole in the center
      */
@@ -445,6 +448,27 @@ public class PieChart extends PieRadarChartBase<PieData> {
 
     public CharSequence getCenterTextSecond() {
         return mCenterTextSecond;
+    }
+
+
+    public void setMiddleColor(int color) {
+        // ((PieChartRenderer) mRenderer).getPaintHole().setColor(color);
+    }
+
+    public void setMiddleOffset(final float percent) {
+        mMiddleOffsetPercent = percent;
+    }
+
+    public float getMiddleOffset() {
+        return mMiddleOffsetPercent;
+    }
+
+    public void setMiddleRadius(final float percent) {
+        mMiddleRadiusPercent = percent;
+    }
+
+    public float getMiddleRadius() {
+        return mMiddleRadiusPercent;
     }
 
     /**
